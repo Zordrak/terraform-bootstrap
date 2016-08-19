@@ -69,3 +69,11 @@ output "vpc_dhcp_options_id" {
 output "vpc_id" {
   value = "${aws_vpc.vpc.id}"
 }
+
+output "vpc_cidr" {
+  value = "${var.vpc_cidr}"
+}
+
+output "vpc_peering_ids" {
+  value = "${module.vpc_peering_connections.vpc_peering_ids}"
+}
