@@ -42,7 +42,7 @@ variable "project" {
 
 variable "region_az_count" {
   type        = "string"
-  default     = "3"
+  default     = "1"
   description = "An ugly hack"
 }
 
